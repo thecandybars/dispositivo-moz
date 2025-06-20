@@ -1,0 +1,16 @@
+export { default as TimelineToolIcon } from "@mui/icons-material/AccessTimeFilled";
+export { default as ZoomToolIcon } from "@mui/icons-material/ZoomIn";
+export { default as BibliographyIcon } from "@mui/icons-material/LibraryBooks";
+export { default as CancelIcon } from "@mui/icons-material/ClearOutlined";
+export { default as SettingsIcon } from "@mui/icons-material/Settings";
+export { default as CloseIcon } from "@mui/icons-material/Cancel";
+export { default as AddIcon } from "@mui/icons-material/Add";
+export { default as RemoveIcon } from "@mui/icons-material/Remove";
+export { default as ResetIcon } from "@mui/icons-material/RestartAlt";
+export { default as Rotate3D } from "@mui/icons-material/ThreeSixty";
+export { default as Light3D } from "@mui/icons-material/Lightbulb";
+export { default as TextIncreaseIcon } from "@mui/icons-material/TextIncrease";
+export { default as VisibilityIcon } from "@mui/icons-material/Visibility";
+export { default as SkipNextIcon } from "@mui/icons-material/SkipNext";
+export { default as CircleIcon } from "@mui/icons-material/Circle";
+export { default as CreditosIcon } from "@mui/icons-material/AutoStories";
