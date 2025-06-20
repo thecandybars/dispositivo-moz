@@ -24,7 +24,14 @@ export default function Header() {
   const { lang } = useContext(LanguageContext);
   const t = translations[lang].header;
 
-  const ordenPaginas = ["/", "/indice", "/mapa", "/excavacion", "/piezas"];
+  const ordenPaginas = [
+    "/",
+    "/indice",
+    "/mapa",
+    "/excavacion",
+    "/piezas",
+    "/creditos",
+  ];
 
   return (
     <Box

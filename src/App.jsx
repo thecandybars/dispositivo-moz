@@ -5,6 +5,7 @@ import Excavacion from "./pages/excavacion/Excavacion";
 import Piezas from "./pages/piezas/Piezas";
 import Layout from "./layout/Layout";
 import Inicio from "./pages/inicio/Inicio";
+import Creditos from "./pages/creditos/Creditos";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="mapa" element={<Mapa />} />
           <Route path="excavacion" element={<Excavacion />} />
           <Route path="piezas" element={<Piezas />} />
+          <Route path="creditos" element={<Creditos />} />
           <Route path="*" element={<Inicio />} />
         </Route>
       </Routes>
