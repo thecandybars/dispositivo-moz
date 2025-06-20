@@ -46,7 +46,7 @@ export default function Inicio() {
           marginY: 2,
         }}
       >
-        {t.titulo.toUpperCase()}
+        {t.titulo}
       </Typography>
 
       <Stack justifyContent={"center"} alignItems="center" gap={2}>

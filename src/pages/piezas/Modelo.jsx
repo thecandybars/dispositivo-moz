@@ -31,7 +31,7 @@ export default function Modelo() {
     })),
   }));
 
-  const [selectedModel, setSelectedModel] = useState(modelsWithText[13]);
+  const [selectedModel, setSelectedModel] = useState(modelsWithText[0]);
 
   const zoomStep = 1.1;
   const onZoomOut = () => {

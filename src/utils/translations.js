@@ -10,7 +10,7 @@ const translations = {
       },
     },
     inicio: {
-      titulo: "Secretos de una casa cartagenera",
+      titulo: "SECRETOS DE UNA CASA CARTAGENERA",
       subtitulo:
         "Vive esta experiencia arqueológica. Aquí encontrarás historias sobre…",
       indice: [
@@ -330,7 +330,7 @@ const translations = {
       },
     },
     inicio: {
-      titulo: "Secrets of a Cartagena House",
+      titulo: "SECRETS Of A CARTAGENA HOUSE",
       indice: [
         "The colonial city",
         "Excavations in the house",
