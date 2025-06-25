@@ -1,8 +1,8 @@
-import { Box, Stack } from "@mui/material";
+import { Box, Dialog, Slide, Stack, Zoom } from "@mui/material";
 import GLBViewer from "../../glbViewer/GLBViewer";
 import ToolBoxWrapper from "../../ui/MapToolbox/ToolboxWrapper";
 import { Button } from "@mui/material";
-import { useContext, useState } from "react";
+import { forwardRef, useContext, useState } from "react";
 import { Rotate3D } from "../../utils/icons";
 import ZoomButton3D from "../../ui/MapToolbox/ZoomButton3D";
 import { theme } from "../../utils/theme/ThemeProviderWrapper";
@@ -15,6 +15,7 @@ import { LanguageContext } from "../../contexts/LanguageContext";
 import PageWrapper from "../../ui/PageWrapper";
 import Side from "./Side";
 import { models } from "./models";
+import MarkerTooltip from "../../ui/MarkerTooltip";
 
 export default function Modelo() {
   const [rotateModel, setRotateModel] = useState(false);
@@ -32,6 +33,12 @@ export default function Modelo() {
   }));
 
   const [selectedModel, setSelectedModel] = useState(modelsWithText[0]);
+
+  // Markers
+  const [selectedMarker, setSelectedMarker] = useState(null);
+  const selectedMarkerData = selectedModel.markers.find(
+    (marker) => marker.id === selectedMarker
+  );
 
   const zoomStep = 1.1;
   const onZoomOut = () => {
@@ -52,6 +59,7 @@ export default function Modelo() {
       onClick={() => {
         if (selectedModel.id === model.id) return;
         setSelectedModel(model);
+        setSelectedMarker(null);
         setSelectedLayer(0);
         setIsReady(false);
       }}
@@ -97,6 +105,36 @@ export default function Modelo() {
         body={selectedModel.sideParagraph}
       />
       <Box height={1} display="flex">
+        <Dialog
+          open={selectedMarker !== null}
+          fullWidth={false}
+          maxWidth={false}
+          slots={{
+            transition: Transition,
+          }}
+          onClose={() => setSelectedMarker(null)}
+          PaperProps={{
+            sx: {
+              width: "auto",
+              maxWidth: "none",
+            },
+          }}
+        >
+          <MarkerTooltip
+            image={selectedMarkerData?.image}
+            imagePOIs={selectedMarkerData?.imagePOIs}
+            title={selectedMarkerData?.title}
+            description={selectedMarkerData?.description}
+            list={selectedMarkerData?.list}
+            onClose={() => setSelectedMarker(null)}
+            // Context passed as props cause Html element creates a separete React tree
+            highContrastProp={false}
+            fontScaleProp={false}
+            // highContrastProp={highContrast}
+            // fontScaleProp={fontScale}
+            // AI says : The <Html> component from @react-three/drei creates a portal to render HTML content outside the normal React Three Fiber component tree. This creates a disconnect in the React context chain, so components inside the Html portal can't access contexts from the parent tree.
+          />
+        </Dialog>
         <Box
           position="relative"
           width="100%"
@@ -113,6 +151,7 @@ export default function Modelo() {
             zoomLevel={zoomLevel}
             selectedLayer={modelLayers[selectedLayer].name}
             onReady={() => setIsReady(true)}
+            onMarkerClick={(id) => setSelectedMarker(id)}
           />
           <ToolBoxWrapper>
             <ZoomButton3D
@@ -182,3 +221,7 @@ export default function Modelo() {
     </PageWrapper>
   );
 }
+
+const Transition = forwardRef(function Transition(props, ref) {
+  return <Zoom ref={ref} {...props} />;
+});

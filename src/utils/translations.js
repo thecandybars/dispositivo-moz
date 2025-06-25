@@ -72,7 +72,7 @@ const translations = {
           caption: "2",
           title: "Lo que cuenta una letrina",
           sideParagraph:
-            "Una letrina es una estructura con foso para depositar los excrementos humanos que contribuye a disminuir los problemas de salubridad.\nEn la excavación de la letrina de la casa se encontró una acumulación de objetos que cuentan sobre los remedios usados para combatir las enfermedades más comunes en la ciudad, el cuidado personal y las prácticas de mesa.",
+            "Una letrina es una estructura con foso para depositar los excrementos humanos que contribuye a disminuir los problemas de salubridad. En la excavación de la letrina de la casa se encontró una acumulación de objetos que cuentan sobre los remedios usados para combatir las enfermedades más comunes en la ciudad, el cuidado personal y las prácticas de mesa.",
           description:
             "En este perfil estratigráfico se observa en la parte superior bacinicas, botellas y otros utensilios que se desecharon cuando se clausuró la letrina en el siglo XX.",
           button: "Cerrar",
@@ -107,7 +107,7 @@ const translations = {
           title: "Olla",
           sideTitle: "Olla de cocina elaborada por alfareros africanos",
           sideParagraph:
-            "Parte de las vasijas usadas en las cocinas de la Cartagena colonial fueron elaboradas por personas africanas esclavizadas y “negros libres”.\nEllos abastecieron la continua y creciente demanda de estos utensilios en la ciudad y aportaron con sus tradiciones a las técnicas, formas y decoraciones.",
+            "Parte de las vasijas usadas en las cocinas de la Cartagena colonial fueron elaboradas por personas africanas esclavizadas y “negros libres”. Ellos abastecieron la continua y creciente demanda de estos utensilios en la ciudad y aportaron con sus tradiciones a las técnicas, formas y decoraciones.",
           markers: [
             {
               id: 1,
@@ -336,6 +336,8 @@ const translations = {
         "Excavations in the house",
         "Things from the past",
       ],
+      subtitulo:
+        "Enjoy this archaeological experience. Here you will find stories about…",
       boton: "Start tour",
     },
     map: {
@@ -375,7 +377,7 @@ const translations = {
       ],
     },
     excavacion: {
-      sideTitle: "House excavations",
+      sideTitle: "Excavations at the house",
       sideParagraph:
         "Archaeologists chose two strategic areas that were to be excavated at the Zenú Gold Museum house. Different information was obtained in each one.\nIn the dig in the house's former vegetable garden or plot, where the inhabitants of colonial houses used to dispose of their rubbish, traces were found of a 19th century latrine, together with numerous artefacts. The dig at the side of the well, which was the waste water well, revealed information about the pre-Hispanic indigenous settlers and the initial contact with the Spaniards.",
 
@@ -405,9 +407,8 @@ const translations = {
       },
     },
     piezas: {
-      sideTitle: "Artefacts",
-      sideParagraph:
-        "Archaeologists use technical drawings and three-dimensional models to reconstruct the original shape of objects from the fragments found in excavations. For example, the edges enable the diameter of pots to be projected, while the edges of the body of containers reveal their configuration.\nTo obtain information about how they were made and how they were used, they use different types of microscopes that enlarge the image up to several thousand times and enable them to explore the details of the fragment at a microstructural level. Macroscopic analysis, which is done with the human eye and other senses, helps them to identify other aspects.\nExplore all these levels of information.",
+      sideTitle: "",
+      sideParagraph: "",
       modelos: [
         {
           id: 4,

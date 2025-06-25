@@ -109,9 +109,9 @@ export default function MarkerTooltip({
   return (
     <Box
       sx={{
-        position: "absolute",
-        top: "-500%", // Positions the box relative to the marker
-        left: "120%",
+        // position: "absolute",
+        // top: "-500%", // Positions the box relative to the marker
+        // left: "120%",
         width: image ? "650px" : "300px",
         height: "auto",
         zIndex: 100,

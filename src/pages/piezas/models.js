@@ -20,11 +20,12 @@ export const models = [
       {
         id: 1,
         position: [0, 2.2, -2.5],
+        image: "/microscopio/18.jpg",
       },
       {
         id: 2,
         position: [0, 1, -1.5],
-        image: "/microscopio/18.jpg",
+        image: "/microscopio/19.jpg",
       },
     ],
   },
@@ -70,7 +71,7 @@ export const models = [
       },
       {
         id: 2,
-        position: [-2.6, 3, -3.5],
+        position: [-1, 3, 0],
         imagePOIs: [
           [10, 40],
           [55, 40],
@@ -97,7 +98,7 @@ export const models = [
       },
       {
         id: 3,
-        position: [0.07, -0.015, 0.02],
+        position: [0.06, 0.015, 0.02],
       },
     ],
   },
@@ -181,6 +182,7 @@ export const models = [
       {
         id: 1,
         position: [1.7, 0, 1.7],
+        image: "/microscopio/20.jpg",
       },
     ],
   },

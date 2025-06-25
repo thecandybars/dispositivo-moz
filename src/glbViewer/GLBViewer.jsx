@@ -22,6 +22,7 @@ export default function GLBViewer({
   zoomLevel = 5,
   selectedLayer = "both",
   onReady,
+  onMarkerClick,
 }) {
   const { highContrast } = useContext(AccesibilityContext);
   const controlsRef = useRef();
@@ -44,6 +45,7 @@ export default function GLBViewer({
         key={model.url}
         onReady={onReady}
         controlsRef={controlsRef}
+        onMarkerClick={onMarkerClick}
       />
       <OrbitControls
         ref={controlsRef}
@@ -56,10 +58,10 @@ export default function GLBViewer({
   );
 }
 
-function Model({ model, selectedLayer, onReady, controlsRef }) {
+function Model({ model, selectedLayer, onReady, controlsRef, onMarkerClick }) {
   const { scene } = useGLTF(model.url);
   const { camera } = useThree();
-  const [selectedMarker, setSelectedMarker] = useState(null);
+  // const [selectedMarker, setSelectedMarker] = useState(null);
   const { highContrast, fontScale } = useContext(AccesibilityContext);
 
   if (scene.children.length > 1 && selectedLayer) {
@@ -84,7 +86,8 @@ function Model({ model, selectedLayer, onReady, controlsRef }) {
 
     // Set camera position
     const newPosition = defaultDirection.clone().multiplyScalar(distance * 0.6);
-    // .add(scene.position);
+    // .add(scene.position)
+    camera.near = 0.01;
     camera.position.copy(newPosition);
     camera.lookAt(scene.position);
     // const newPosition = defaultDirection.clone().multiplyScalar(distance * 0.7);
@@ -100,9 +103,9 @@ function Model({ model, selectedLayer, onReady, controlsRef }) {
     if (onReady) onReady();
   }, [model, selectedLayer, scene, camera]);
 
-  const selectedMarkerData = model.markers.find(
-    (marker) => marker.id === selectedMarker
-  );
+  // const selectedMarkerData = model.markers.find(
+  //   (marker) => marker.id === selectedMarker
+  // );
 
   return (
     <group>
@@ -113,12 +116,13 @@ function Model({ model, selectedLayer, onReady, controlsRef }) {
           key={marker.id}
           position={marker.position}
           text={marker.id}
-          onClick={() => setSelectedMarker(marker.id)}
+          onClick={() => onMarkerClick(marker.id)}
+          // onClick={() => setSelectedMarker(marker.id)}
           highContrast={highContrast}
           scale={model.markerScale}
         />
       ))}
-      <Html
+      {/* <Html
         key={selectedMarkerData?.id}
         position={[
           selectedMarkerData?.position[0],
@@ -143,7 +147,7 @@ function Model({ model, selectedLayer, onReady, controlsRef }) {
           fontScaleProp={fontScale}
           // AI says : The <Html> component from @react-three/drei creates a portal to render HTML content outside the normal React Three Fiber component tree. This creates a disconnect in the React context chain, so components inside the Html portal can't access contexts from the parent tree.
         />
-      </Html>
+      </Html> */}
     </group>
   );
 }

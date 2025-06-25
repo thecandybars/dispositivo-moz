@@ -43,7 +43,7 @@ export default function Excavacion() {
   ];
   return (
     <PageWrapper>
-      <Side title={texts[currentStep].title} body={texts[currentStep].body} />
+      <Side title={texts[currentStep]?.title} body={texts[currentStep].body} />
       <Stack height="100%">
         {/* 3D PLAYER */}
         <Box position="relative" width="100%" bgcolor="#ddd" height="90%">
@@ -54,47 +54,6 @@ export default function Excavacion() {
             />
           )}
           <GLBAnimation step={currentStep} onPlaying={(e) => setIsPlaying(e)} />
-          {/* <ToolBoxWrapper>
-          <Button
-            variant="contained"
-            color="primary"
-            onClick={() =>
-              currentStep === 2
-                ? navigate("/piezas")
-                : setCurrentStep((prevStep) => (prevStep + 1) % 3)
-            }
-            sx={{
-              display: "flex",
-              gap: 1,
-              border: `5px solid ${theme.palette.primary.main}`,
-              borderRadius: 100,
-              height: "60px",
-              width: currentStep === 2 ? "200px" : "60px",
-              transition: "all 0.1s ease-in-out",
-            }}
-          >
-            {currentStep === 2 && (
-              <Typography>{t.botones.linkPiezas}</Typography>
-            )}
-            <SkipNextIcon />
-          </Button>
-          {currentStep === 2 && (
-            <Button
-              variant="contained"
-              color="primary"
-              onClick={() => setCurrentStep((prevStep) => (prevStep + 1) % 3)}
-              sx={{
-                border: `5px solid ${theme.palette.primary.main}`,
-
-                borderRadius: 100,
-                height: "60px",
-                width: "60px",
-              }}
-            >
-              <ResetIcon />
-            </Button>
-          )}
-        </ToolBoxWrapper> */}
         </Box>
         {/* BUTTONS */}
         <Box
@@ -109,7 +68,7 @@ export default function Excavacion() {
             <Button
               variant="contained"
               color="primary"
-              onClick={() => setCurrentStep((prevStep) => (prevStep + 1) % 3)}
+              onClick={() => setCurrentStep(0)}
               sx={{
                 border: `2px solid ${theme.palette.primary.main}`,
                 borderRadius: 100,
@@ -158,9 +117,9 @@ const Marker = ({ marker, text }) => {
   const [openDialog, setOpenDialog] = useState(false);
   return (
     <>
-      {openDialog && (
+      {openDialog && marker && text && (
         <MarkerTooltip
-          positionTooltip={marker.positionTooltip}
+          positionTooltip={marker?.positionTooltip}
           image={marker.image}
           title={text.title}
           description={text.description}
