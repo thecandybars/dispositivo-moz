@@ -1,8 +1,8 @@
-import { Box, Dialog, Slide, Stack, Zoom } from "@mui/material";
+import { Box, Dialog, Stack, Zoom } from "@mui/material";
 import GLBViewer from "../../glbViewer/GLBViewer";
 import ToolBoxWrapper from "../../ui/MapToolbox/ToolboxWrapper";
 import { Button } from "@mui/material";
-import { forwardRef, useContext, useState } from "react";
+import { forwardRef, useContext, useMemo, useState } from "react";
 import { Rotate3D } from "../../utils/icons";
 import ZoomButton3D from "../../ui/MapToolbox/ZoomButton3D";
 import { theme } from "../../utils/theme/ThemeProviderWrapper";
@@ -23,6 +23,16 @@ export default function Modelo() {
   const { lang } = useContext(LanguageContext);
   const t = translations[lang].piezas.modelos;
 
+  // const modelsWithText = useMemo(() => {
+  //   return models.map((model, indexModel) => ({
+  //     ...model,
+  //     ...t[indexModel],
+  //     markers: model.markers.map((marker, indexMarker) => ({
+  //       ...marker,
+  //       ...t[indexModel].markers[indexMarker],
+  //     })),
+  //   }));
+  // }, [t, lang]);
   const modelsWithText = models.map((model, indexModel) => ({
     ...model,
     ...t[indexModel],
@@ -99,7 +109,7 @@ export default function Modelo() {
   const [isReady, setIsReady] = useState(false);
 
   return (
-    <PageWrapper>
+    <PageWrapper key={lang}>
       <Side
         title={selectedModel.sideTitle}
         body={selectedModel.sideParagraph}

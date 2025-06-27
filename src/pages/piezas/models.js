@@ -6,7 +6,7 @@ export const models = [
     markers: [
       {
         id: 1,
-        position: [-0.2, 0.2, 0],
+        position: [-0.2, 0.2, -0.1],
         image: "/microscopio/17.jpg",
         imagePOIs: [[65, 38]],
       },

@@ -47,7 +47,7 @@ export default function Marker({ marker, onClick, isOpen, onClose }) {
           </Typography>
         </Box>
       </Box>
-      {isOpen && (
+      {/* {isOpen && (
         <MarkerTooltip
           image={marker.image}
           imagePOIs={marker.imagePOIs}
@@ -58,7 +58,7 @@ export default function Marker({ marker, onClick, isOpen, onClose }) {
           onClose={onClose}
           list={marker.list}
         />
-      )}
+      )} */}
     </KeepScale>
   );
 }

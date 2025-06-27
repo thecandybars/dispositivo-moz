@@ -87,7 +87,7 @@ const translations = {
     piezas: {
       sideTitle: "Cosas del pasado",
       sideParagraph:
-        "Arqueólogas y arqueólogos emplean dibujos técnicos y modelos tridimensionales para reconstruir la forma original de los objetos a partir de los fragmentos encontrados en las excavaciones. Los bordes, por ejemplo, permiten proyectar el diámetro de las vasijas, mientras los del cuerpo de los recipientes revelan su configuración.\nPara obtener información sobre su manufactura y el uso que se les dio, recurren a diversos tipos de microscopios que amplían la imagen hasta varios miles de veces y permiten explorar los detalles del fragmento a nivel microestructural. El análisis macroscópico, hecho con el ojo humano y los demás sentidos, les ayuda a identificar otros aspectos.\nExplora todos estos niveles de información. ",
+        "Arqueólogas y arqueólogos emplean dibujos técnicos y modelos tridimensionales para reconstruir la forma original de los objetos a partir de los fragmentos encontrados en las excavaciones. Los bordes, por ejemplo, permiten proyectar el diámetro de las vasijas, mientras los del cuerpo de los recipientes revelan su configuración.\nPara obtener información sobre su manufactura y el uso que se les dio, recurren a diversos tipos de microscopios que amplían la imagen hasta varios miles de veces y permiten explorar los detalles del fragmento a nivel microestructural. El análisis macroscópico, hecho con el ojo humano y los demás sentidos, les ayuda a identificar otros aspectos.\nExplora todos estos niveles de información.",
       modelos: [
         {
           id: 4,
@@ -318,6 +318,52 @@ const translations = {
         },
       ],
     },
+    creditos: {
+      parrafos: [
+        "Conoce más en el 'Boletín Museo del Oro No. 61' en el artículo 'Una casa en la plaza. Historias de la vida cotidiana en Cartagena de Indias desde la arqueología' por Monika Therrien.",
+        "¡Visita aquí cerca la casa donde se vivieron estas historias!",
+      ],
+      titulo: "Créditos",
+      secciones: [
+        {
+          titulo: "Investigación y guión",
+          subtitulos: [
+            "Fundación Erigaie:",
+            "Monika Therrien",
+            "Fernando Suescún",
+            "Laura Niño",
+          ],
+        },
+        {
+          titulo: "Curaduría, museografía y restauración de las piezas",
+          subtitulos: ["Museo del Oro"],
+        },
+        {
+          titulo: "Producción de la narrativa digital",
+          subtitulos: ["Atractor S.A.S."],
+        },
+        {
+          titulo: "Diseño de la narrativa digital",
+          subtitulos: ["Elder Manuel Tobar Panchoaga"],
+        },
+        {
+          titulo: "Traducción al inglés",
+          subtitulos: ["Michael Charles Sparrow"],
+        },
+        {
+          titulo: "Diseño gráfico",
+          subtitulos: ["Tangrama"],
+        },
+        {
+          titulo: "Referencias",
+          subtitulos: [
+            "Biblioteca del Congreso de los Estados Unidos. Mapa Cartagena de Baptista Boazio, Walter Bigges, Lieutenant Croftes, 1586.",
+            "Archivo General de Indias [AGI]. MP-PANAMA, 20. Plano de Antonelli, Las cosas mas particulares de la ciudad de Cartagena. Redibujado por Atractor S.A.S., 2025.",
+            "Archivo General de Indias [AGI]. MP-PANAMA, 2. Modelo de cómo quedará el muelle de Cartagena después de hecho como agora el Señor Governador lo quiere hacer, 1571. Redibujado por Atractor S.A.S., 2025.",
+          ],
+        },
+      ],
+    },
   },
   en: {
     header: {
@@ -407,12 +453,13 @@ const translations = {
       },
     },
     piezas: {
-      sideTitle: "",
-      sideParagraph: "",
+      sideTitle: "Things from the past",
+      sideParagraph:
+        "Archaeologists use technical drawings and three-dimensional models to reconstruct the original shape of objects, based on fragments found in their digs. Edges, for example, enable the diameter of vessels to be projected, while drawings and models of the body of containers reveal their configuration.\nTo obtain information about how they were manufactured and the use to which they were put, they turn to various types of microscopes which amplify the image as many as several thousand times and allow details to be explored at micro-structural level. A macroscopic analysis, using the human eye and other senses, helps them to identify other aspects.\nExplore all these levels of information.",
       modelos: [
         {
           id: 4,
-          title: "funnel",
+          title: "Funnel",
           sideTitle: "19th century English funnel",
           sideParagraph:
             "The blue design on this funnel fragment was initially engraved on a copper plate by a craftsman. It was then printed in a blue ink with cobalt oxide on a silk paper that was affixed to the top of the unglazed surface (first firing of the earthenware), coated with a layer of white enamel.\nTo give it its shiny glaze, a transparent enamel was applied, and it was then fired again. In this process, the design was transferred to the object.",
@@ -487,7 +534,7 @@ const translations = {
         },
         {
           id: 11,
-          title: "fragment of indigenous pottery",
+          title: "Fragment of indigenous pottery",
           sideTitle: "fragment of Crespo-type indigenous pottery",
           sideParagraph:
             "The decoration, colour and material of this fragment mean that it can be associated with the Crespo type of pottery defined by archaeologist Alicia Dussán. This indigenous pottery has been found in contexts dating from pre-Hispanic times to early in the 19th century, and bears testimony to the fact that local pottery traditions continued long after the Spanish invasion.",
@@ -635,6 +682,52 @@ const translations = {
               id: 2,
               list: "Enamel with a higher concentration of cobalt oxide.",
             },
+          ],
+        },
+      ],
+    },
+    creditos: {
+      parrafos: [
+        "Find out more in the paper in 'Gold Museum Bulletin No. 61', 'A house in the square. Stories of everyday life in Cartagena de Indias revealed by archaeology', by Monika Therrien.",
+        "Visit the house near here where these stories took place!",
+      ],
+      titulo: "",
+      secciones: [
+        {
+          titulo: "Research and script",
+          subtitulos: [
+            "Erigaie",
+            "Monika Therrien",
+            "Fernando Suescún",
+            "Laura Niño",
+          ],
+        },
+        {
+          titulo: "Curatorship, museography and restoration of objects",
+          subtitulos: ["Museo del Oro"],
+        },
+        {
+          titulo: "Digital narrative production",
+          subtitulos: ["Atractor S.A.S."],
+        },
+        {
+          titulo: "Digital narrative design",
+          subtitulos: ["Elder Manuel Tobar Panchoaga"],
+        },
+        {
+          titulo: "English translation",
+          subtitulos: ["Michael Charles Sparrow"],
+        },
+        {
+          titulo: "Graphic Design",
+          subtitulos: ["Tangrama"],
+        },
+        {
+          titulo: "References",
+          subtitulos: [
+            "Biblioteca del Congreso de los Estados Unidos. Mapa Cartagena de Baptista Boazio, Walter Bigges, Lieutenant Croftes, 1586.",
+            "Archivo General de Indias [AGI]. MP-PANAMA, 20. Plano de Antonelli, Las cosas mas particulares de la ciudad de Cartagena. Redibujado por Atractor S.A.S., 2025.",
+            "Archivo General de Indias [AGI]. MP-PANAMA, 2. Modelo de cómo quedará el muelle de Cartagena después de hecho como agora el Señor Governador lo quiere hacer, 1571. Redibujado por Atractor S.A.S., 2025.",
           ],
         },
       ],
