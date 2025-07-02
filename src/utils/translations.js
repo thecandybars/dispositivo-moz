@@ -50,8 +50,9 @@ const translations = {
           id: 3,
           caption: "4",
           title: "La manzana del Museo del Oro Zenú durante la toma de Drake",
-          list: "Gobernación#Casa del carcelero#Botica#Casa Museo del Oro Zenú#Centros de manzana verdes por las huertas",
+          list: "Gobernación#Casa del carcelero#Centros de manzana verdes por las huertas#Casa MOZ#Botica",
           button: "Visita la excavación de la casa",
+          path: "/excavacion",
         },
       ],
     },
@@ -104,7 +105,7 @@ const translations = {
         },
         {
           id: 13,
-          title: "Olla",
+          title: "Olla de tradición africana",
           sideTitle: "Olla de cocina elaborada por alfareros africanos",
           sideParagraph:
             "Parte de las vasijas usadas en las cocinas de la Cartagena colonial fueron elaboradas por personas africanas esclavizadas y “negros libres”. Ellos abastecieron la continua y creciente demanda de estos utensilios en la ciudad y aportaron con sus tradiciones a las técnicas, formas y decoraciones.",
@@ -116,7 +117,7 @@ const translations = {
             },
             {
               id: 2,
-              description: "Residuos de los alimentos preparados.",
+              description: "Residuos de los alimentos preparados",
             },
           ],
         },
@@ -129,20 +130,20 @@ const translations = {
           markers: [
             {
               id: 1,
-              list: "Comercializadores del medicamento: Curtis es el yerno de la señora Winslow y Perkins, su socio#El nombre del medicamento se toma de la médica Charlotte N. Winslow, suegra de Curtis#Al asociarse a una mujer le daba un aire de confianza maternal al jarabe#Nombre de la compañía farmacéutica",
+              list: "Comercializadores del medicamento: Curtis es el yerno de la señora Winslow y Perkins, su socio#El nombre del medicamento se toma de la médica Charlotte N. Winslow, suegra de Curtis. Al asociarse a una mujer le daba un aire de confianza maternal al jarabe.#Nombre de la compañía farmacéutica.",
             },
           ],
         },
         {
           id: 3,
-          title: "Cepillo",
+          title: "Cepillo de dientes",
           sideTitle: "Cepillo de dientes en hueso",
           sideParagraph:
             "Los cepillos de dientes de hueso y pelo animal se usaron en Europa desde el siglo XVII, cuando era considerado un objeto de lujo, hasta entrado el siglo XX. Los mayores productores de estos cepillos fueron Inglaterra, Alemania, Francia y Japón. Su producción solo se masificó con la invención de la máquina perforadora en 1870.",
           markers: [
             {
               id: 1,
-              list: "Estandarización del tamaño de los orificios como indicador de elaboración industrial.",
+              list: "La uniformidad de los orificios evidencia su fabricación industrial",
             },
           ],
         },
@@ -160,14 +161,14 @@ const translations = {
             },
             {
               id: 2,
-              list: "El vidriado en la superficie interior es más grueso y se preservó mejor#Pasta cerámica de la escudilla.",
+              list: "El vidriado en la superficie interior es más grueso y se preservó mejor.#Pasta cerámica de la escudilla.",
             },
           ],
         },
         {
           id: 11,
-          title: "fragmento de cerámica indígena",
-          sideTitle: "fragmento de cerámica indígena tipo Crespo",
+          title: "Cerámica indígena",
+          sideTitle: "Cerámica indígena tipo Crespo",
           sideParagraph:
             "La decoración, el color y el material de este fragmento permiten asociarlo al tipo cerámico Crespo definido por la arqueóloga Alicia Dussán. Esta alfarería indígena se ha encontrado en contextos datados desde tiempos prehispánicos hasta entrado el siglo XIX, como testimonio de la continuidad de las tradiciones cerámicas locales después de la invasión española. ",
           markers: [
@@ -270,7 +271,7 @@ const translations = {
           title: "Plato",
           sideTitle: "Plato pando sevillano",
           sideParagraph:
-            "Este plato del tipo azul sobre azul fue producido en Sevilla, en el barrio de Triana, entre 1550 y 1630. La loza de este tipo buscó imitar tanto la cerámica italiana, como la porcelana china.\nPudo haber sido parte del menaje de la familia Matute, quienes pretendían preservar en América las prácticas de mesa y los gustos hispanos a la hora de consumir sus alimentos. ",
+            "Este plato del tipo azul sobre azul fue producido en Sevilla, en el barrio de Triana, entre 1550 y 1630. La loza de este tipo buscó imitar tanto la cerámica italiana, como la porcelana china.\nPudo haber sido parte del menaje de la familia Matute, quienes pretendían preservar en América las prácticas de mesa y los gustos hispanos a la hora de consumir sus alimentos.",
           markers: [
             {
               id: 1,
@@ -278,13 +279,13 @@ const translations = {
             },
             {
               id: 2,
-              list: "Pasta original quemada antes de aplicar el esmalte (bizcocho).",
+              list: "Pasta original quemada antes de aplicar el esmalte (bizcocho)",
             },
           ],
         },
         {
           id: 12,
-          title: "Raspador",
+          title: "Raspador de piedra",
           sideTitle: "Raspador de piedra",
           sideParagraph:
             "Los indígenas usaron la piedra para elaborar una gran diversidad de herramientas. Recurrieron a rocas muy duras, principalmente chert, cuya forma redondeada y estructura facilitaba la elaboración de objetos cortantes como esta raedera empleada para desprender el cuero de los animales.",
@@ -308,11 +309,11 @@ const translations = {
           markers: [
             {
               id: 1,
-              list: "Esmalte azul claro con óxido de estaño y menor contenido de óxido de cobalto.",
+              list: "Esmalte azul claro con óxido de estaño y menor contenido de óxido de cobalto",
             },
             {
               id: 2,
-              list: "Esmalte con mayor concentración de óxido de cobalto.",
+              list: "Esmalte con mayor concentración de óxido de cobalto",
             },
           ],
         },
@@ -418,7 +419,8 @@ const translations = {
           title:
             "The block where the Zenú Gold Museum now stands, during the siege by Drake.",
           list: "Provincial Government building#Jailer's house#Centres of blocks green because of the vegetable gardens#Zenú Gold Museum house#Pharmacy",
-          button: "Visit the excavation of the house",
+          button: "Visit the excavations of the house",
+          path: "/excavacion",
         },
       ],
     },
@@ -472,7 +474,7 @@ const translations = {
         },
         {
           id: 13,
-          title: "Pot",
+          title: "Pot of African tradition",
           sideTitle: "Kitchen pot of African tradition",
           sideParagraph:
             "Some of the vessels that were used in colonial Cartagena kitchens were made by enslaved Africans and “free negroes”. They met the continuous and growing demand in the city for these utensils and, with their traditions, contributed to techniques, forms and decorations.",
@@ -484,7 +486,7 @@ const translations = {
             },
             {
               id: 2,
-              description: "Remains of cooked food.",
+              description: "Remains of cooked food",
             },
           ],
         },
@@ -497,7 +499,7 @@ const translations = {
           markers: [
             {
               id: 1,
-              list: "The medicine's proprietors: Curtis was the son-in-law of Mrs Winslow and Perkins, her partner#The name of the medicine comes from Doctor Charlotte N. Winslow, Curtis' mother-in-law.  Associating the syrup with a woman gave it an air of motherly trust#Name of the pharmaceutical company",
+              list: "The medicine's proprietors: Curtis was the son-in-law of Mrs Winslow and Perkins, her partner#The name of the medicine comes from Doctor Charlotte N. Winslow, Curtis' mother-in-law. Associating the syrup with a woman gave it an air of motherly trust.#Name of the pharmaceutical company.#",
             },
           ],
         },
@@ -510,16 +512,16 @@ const translations = {
           markers: [
             {
               id: 1,
-              list: "Standardization of the size of the holes as an indicator of industrial production.",
+              list: "The uniformity of the holes testifies to their industrial production.",
             },
           ],
         },
         {
           id: 10,
-          title: "Bowl",
+          title: "Wide bowl",
           sideTitle: "Spanish wide bowl",
           sideParagraph:
-            "Wide bowls were used for serving soups, broths or stews that were eaten with a spoon or sipped. This one is of the type known as Smooth Columbia, a Spanish majolica made between 1490 and 1550. Its shiny, glazed surface was obtained using crushed lead, and the white colour with tin. This latter technique was introduced in Spain by the Arabs",
+            "Wide bowls were used for serving soups, broths or stews that were eaten with a spoon or sipped. This one is of the type known as Smooth Columbia, a Spanish majolica made between 1490 and 1550. Its shiny, glazed surface was obtained using crushed lead, and the white colour with tin. This latter technique was introduced in Spain by the Arabs.",
           markers: [
             {
               id: 1,
@@ -534,8 +536,8 @@ const translations = {
         },
         {
           id: 11,
-          title: "Fragment of indigenous pottery",
-          sideTitle: "fragment of Crespo-type indigenous pottery",
+          title: "Indigenous pottery",
+          sideTitle: "Crespo-type indigenous pottery",
           sideParagraph:
             "The decoration, colour and material of this fragment mean that it can be associated with the Crespo type of pottery defined by archaeologist Alicia Dussán. This indigenous pottery has been found in contexts dating from pre-Hispanic times to early in the 19th century, and bears testimony to the fact that local pottery traditions continued long after the Spanish invasion.",
           markers: [
@@ -550,13 +552,13 @@ const translations = {
             {
               id: 3,
               description:
-                "The dark core of the ceramic fragment is evidence of the oxidation of organic matter in the clay, due to a firing process that did not exceed 600°C.",
+                "The dark core is evidence of organic material oxidation in the paste due to a process of firing at a low temperature of no more than 600°C.",
             },
           ],
         },
         {
           id: 9,
-          title: "Budare",
+          title: "Baking pan",
           sideTitle: "Budare (flat baking pan)",
           sideParagraph:
             "Cassava, a plant which originated in America, had been used since pre-Hispanic times for making cassava bread or tortillas. The cassava was grated and squeezed to make the dough. It was then spread out and grilled on the hot baking pan. Corn tortillas were prepared on it, and it was also used for grilling seeds. The Spaniards quickly incorporated these foods into their diet, as well as using the utensils.",
@@ -588,7 +590,7 @@ const translations = {
           markers: [
             {
               id: 1,
-              description: "Hand-painted floral designs.",
+              description: "Hand-painted floral designs",
             },
           ],
         },
@@ -624,7 +626,7 @@ const translations = {
           title: "Amphora",
           sideTitle: "Amphora for wine and oil",
           sideParagraph:
-            "Amphorae made in Spain were a popular container for liquids in colonial America. They arrived on ships loaded with wine or olive oil, and helped with the weight of the vessel. Once these liquids had been consumed, the amphorae were used to store water for drinking or other fermented beverages.",
+            "Amphorae made in Spain were a popular container for liquids in colonial America. They arrived on ships loaded with wine or olive oil and helped with the weight of the vessel. Once these liquids had been consumed, the amphorae were used to store water for drinking or other fermented beverages.",
 
           markers: [
             {
@@ -688,7 +690,7 @@ const translations = {
     },
     creditos: {
       parrafos: [
-        "Find out more in the paper in 'Gold Museum Bulletin No. 61', 'A house in the square. Stories of everyday life in Cartagena de Indias revealed by archaeology', by Monika Therrien.",
+        "Find out more in the paper in `Gold Museum Bulletin No. 61´, `A house in the square. Stories of everyday life in Cartagena de Indias revealed by archaeology´, by Monika Therrien.",
         "Visit the house near here where these stories took place!",
       ],
       titulo: "",

@@ -170,6 +170,16 @@ export default function MarkerTooltip({
               {description}
             </Typography>
           )}
+          {/* {button && (
+            <Button
+              variant="contained"
+              color="primary"
+              component={Link}
+              to={"/excavacion"}
+            >
+              <Typography variant="body1">{button}</Typography>
+            </Button>
+          )} */}
           {button && path && (
             <Button
               variant="contained"

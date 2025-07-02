@@ -74,7 +74,7 @@ export const models = [
         position: [-1, 3, 0],
         imagePOIs: [
           [10, 40],
-          [55, 40],
+          [68, 30],
         ],
 
         image: "/microscopio/9.jpg",

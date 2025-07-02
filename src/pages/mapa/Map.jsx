@@ -51,9 +51,9 @@ export default function Mapa() {
       imagePOIs: [
         [11, 1],
         [40, 1],
-        [90, 1],
-        [90, 50],
         [45, 60],
+        [90, 50],
+        [90, 1],
       ],
       position: { x: 39.5, y: 34 },
       positionTooltip: { x: 43, y: 20 },
@@ -101,6 +101,8 @@ export default function Mapa() {
         title={selectedMarkerData?.title}
         description={selectedMarkerData?.description}
         list={selectedMarkerData?.list}
+        button={selectedMarkerData?.button}
+        path={selectedMarkerData?.path}
         onClose={() => setSelectedMarker(null)}
         // Context passed as props cause Html element creates a separete React tree
         highContrastProp={false}
