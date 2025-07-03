@@ -1,4 +1,5 @@
 # Dispositivo Casa MOZ
 
-Instalacion : npm install
-Ejecutar : npm run dev
+- Instalacion : npm install
+
+- Ejecución : npm run dev
