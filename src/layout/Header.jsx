@@ -182,7 +182,8 @@ const LangButton = () => {
         border: "1px solid" + theme.palette.primary.main,
       }}
     >
-      <Typography variant="h6"> {lang?.toUpperCase()}</Typography>
+      <Typography variant="h6"> {lang === "es" ? "EN" : "ES"}</Typography>
+      {/* <Typography variant="h6"> {lang?.toUpperCase()}</Typography> */}
     </Button>
   );
 };

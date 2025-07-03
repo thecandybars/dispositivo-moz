@@ -3,6 +3,7 @@ export const models = [
     id: 4,
     url: "/models/embudo.glb",
     markerScale: 0.6,
+    minDistance: 1.2,
     markers: [
       {
         id: 1,
@@ -16,6 +17,7 @@ export const models = [
     id: 13,
     url: "/models/olla.glb",
     markerScale: 4,
+    minDistance: 8,
     markers: [
       {
         id: 1,
@@ -33,6 +35,8 @@ export const models = [
     id: 2,
     url: "/models/botella.glb",
     markerScale: 0.9,
+    minDistance: 1.8,
+
     markers: [
       {
         id: 1,
@@ -50,6 +54,8 @@ export const models = [
     id: 3,
     url: "/models/cepillo.glb",
     markerScale: 1.2,
+    minDistance: 1,
+
     markers: [
       {
         id: 1,
@@ -63,6 +69,8 @@ export const models = [
     id: 10,
     url: "/models/escudilla.glb",
     markerScale: 5,
+    minDistance: 9,
+
     markers: [
       {
         id: 1,
@@ -85,6 +93,7 @@ export const models = [
     id: 11,
     url: "/models/fragmento-ceramica-indigena.glb",
     markerScale: 0.035,
+    minDistance: 0.17,
     markers: [
       {
         id: 1,
@@ -106,6 +115,7 @@ export const models = [
     id: 9,
     url: "/models/budare.glb",
     markerScale: 3,
+    minDistance: 6,
     markers: [
       {
         id: 1,
@@ -140,6 +150,8 @@ export const models = [
     id: 6,
     url: "/models/taza-flores.glb",
     markerScale: 1.4,
+    minDistance: 2.8,
+
     markers: [
       {
         id: 1,
@@ -151,6 +163,7 @@ export const models = [
     id: 8,
     url: "/models/bacin.glb",
     markerScale: 2.1,
+    minDistance: 4,
     markers: [
       {
         id: 1,
@@ -167,6 +180,8 @@ export const models = [
     id: 7,
     url: "/models/basinica.glb",
     markerScale: 0.17,
+    minDistance: 0.5,
+
     markers: [
       {
         id: 1,
@@ -178,6 +193,7 @@ export const models = [
     id: 1,
     url: "/models/botija.glb",
     markerScale: 3,
+    minDistance: 6,
     markers: [
       {
         id: 1,
@@ -190,6 +206,8 @@ export const models = [
     id: 5,
     url: "/models/plato.glb",
     markerScale: 10.5,
+    minDistance: 7,
+
     markers: [
       {
         id: 1,
@@ -209,6 +227,8 @@ export const models = [
     id: 12,
     url: "/models/raspador.glb",
     markerScale: 1.2,
+    minDistance: 4,
+
     markers: [
       {
         id: 1,
@@ -228,6 +248,8 @@ export const models = [
     id: 14,
     url: "/models/jarron.glb",
     markerScale: 2,
+    minDistance: 2,
+
     markers: [
       {
         id: 1,

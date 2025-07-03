@@ -2,17 +2,10 @@
 /* eslint-disable react/prop-types */
 import { useContext, useEffect, useRef, useState } from "react";
 import { Canvas, useThree } from "@react-three/fiber";
-import {
-  OrbitControls,
-  useGLTF,
-  Text,
-  Billboard,
-  Html,
-} from "@react-three/drei";
+import { OrbitControls, useGLTF, Text, Billboard } from "@react-three/drei";
 import { AccesibilityContext } from "../contexts/AccesibilityContext";
 import * as THREE from "three";
 import { theme } from "../utils/theme/ThemeProviderWrapper";
-import MarkerTooltip from "../ui/MarkerTooltip";
 // import { useFrame } from "@react-three/fiber";
 
 export default function GLBViewer({
@@ -52,7 +45,7 @@ export default function GLBViewer({
         autoRotate={rotateModel}
         autoRotateSpeed={2}
         // maxDistance={15}
-        // minDistance={5}
+        minDistance={model.minDistance || 1}
       />
     </Canvas>
   );
