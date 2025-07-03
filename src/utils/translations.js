@@ -495,7 +495,7 @@ const translations = {
           markers: [
             {
               id: 1,
-              list: "The medicine's proprietors: Curtis was the son-in-law of Mrs Winslow and Perkins, her partner.#The name of the medicine comes from Doctor Charlotte N. Winslow, Curtis' mother-in-law. Associating the syrup with a woman gave it an air of motherly trust.#Name of the pharmaceutical company#",
+              list: "The medicine's proprietors: Curtis was the son-in-law of Mrs Winslow and Perkins, her partner.#The name of the medicine comes from Doctor Charlotte N. Winslow, Curtis' mother-in-law. Associating the syrup with a woman gave it an air of motherly trust.#Name of the pharmaceutical company",
             },
           ],
         },
