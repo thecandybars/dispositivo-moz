@@ -130,7 +130,7 @@ const translations = {
           markers: [
             {
               id: 1,
-              list: "Comercializadores del medicamento: Curtis es el yerno de la señora Winslow y Perkins, su socio#El nombre del medicamento se toma de la médica Charlotte N. Winslow, suegra de Curtis. Al asociarse a una mujer le daba un aire de confianza maternal al jarabe.#Nombre de la compañía farmacéutica.",
+              list: "Comercializadores del medicamento. Curtis es el yerno de la señora Winslow y Perkins, su socio.#El nombre del medicamento se toma de la médica Charlotte N. Winslow, suegra de Curtis. Al asociarse a una mujer le daba un aire de confianza maternal al jarabe.#Nombre de la compañía farmacéutica",
             },
           ],
         },
@@ -309,11 +309,7 @@ const translations = {
           markers: [
             {
               id: 1,
-              list: "Esmalte azul claro con óxido de estaño y menor contenido de óxido de cobalto",
-            },
-            {
-              id: 2,
-              list: "Esmalte con mayor concentración de óxido de cobalto",
+              list: "Esmalte azul claro con óxido de estaño y menor contenido de óxido de cobalto#Esmalte con mayor concentración de óxido de cobalto",
             },
           ],
         },
@@ -390,7 +386,7 @@ const translations = {
     map: {
       sideTitle: "The colonial city",
       sideParagraph:
-        "Cartagena was built on land where Malibú indigenous people had settled, in the bay. In 1533 Pedro de Heredia founded the port city there, despite the shortage of water suitable for drinking, because of the advantages the site offered for the arrival of ships and for defending the city. Many plans of the city still exist which enable us to see how it became transformed with the passing of the centuries. This plan shows Cartagena and its surrounding area in 1586, when the city was besieged and plundered by the privateer Francis Drake.\nExplore the blocks and the houses with the magnifying glass.  ",
+        "Cartagena was built on land where Malibú indigenous people had settled, in the bay. In 1533 Pedro de Heredia founded the port city there, despite the shortage of water suitable for drinking, because of the advantages the site offered for the arrival of ships and for defending the city. Many plans of the city still exist which enable us to see how it became transformed with the passing of the centuries. This plan shows Cartagena and its surrounding area in 1586, when the city was besieged and plundered by the privateer Francis Drake.\nExplore some interesting sites in the colonial city.",
       markers: [
         {
           id: 0,
@@ -499,7 +495,7 @@ const translations = {
           markers: [
             {
               id: 1,
-              list: "The medicine's proprietors: Curtis was the son-in-law of Mrs Winslow and Perkins, her partner#The name of the medicine comes from Doctor Charlotte N. Winslow, Curtis' mother-in-law. Associating the syrup with a woman gave it an air of motherly trust.#Name of the pharmaceutical company.#",
+              list: "The medicine's proprietors: Curtis was the son-in-law of Mrs Winslow and Perkins, her partner.#The name of the medicine comes from Doctor Charlotte N. Winslow, Curtis' mother-in-law. Associating the syrup with a woman gave it an air of motherly trust.#Name of the pharmaceutical company#",
             },
           ],
         },
@@ -648,7 +644,7 @@ const translations = {
             },
             {
               id: 2,
-              list: "Original paste burned before applying the enamel (unglazed).",
+              list: "Original paste burned before applying the enamel (unglazed)",
             },
           ],
         },
@@ -678,11 +674,7 @@ const translations = {
           markers: [
             {
               id: 1,
-              list: "Clear blue enamel with tin oxide and a lower cobalt oxide content.",
-            },
-            {
-              id: 2,
-              list: "Enamel with a higher concentration of cobalt oxide.",
+              list: "Clear blue enamel with tin oxide and a lower cobalt oxide content.#Enamel with a higher concentration of cobalt oxide.",
             },
           ],
         },
