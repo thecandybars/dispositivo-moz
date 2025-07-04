@@ -2,7 +2,7 @@ import { Box, Dialog, Stack, Zoom } from "@mui/material";
 import GLBViewer from "../../glbViewer/GLBViewer";
 import ToolBoxWrapper from "../../ui/MapToolbox/ToolboxWrapper";
 import { Button } from "@mui/material";
-import { forwardRef, useContext, useState } from "react";
+import { forwardRef, useContext, useEffect, useMemo, useState } from "react";
 import { Rotate3D } from "../../utils/icons";
 import ZoomButton3D from "../../ui/MapToolbox/ZoomButton3D";
 import { theme } from "../../utils/theme/ThemeProviderWrapper";
@@ -23,16 +23,24 @@ export default function Modelo() {
   const { lang } = useContext(LanguageContext);
   const t = translations[lang].piezas.modelos;
 
-  const modelsWithText = models.map((model, indexModel) => ({
-    ...model,
-    ...t[indexModel],
-    markers: model.markers.map((marker, indexMarker) => ({
-      ...marker,
-      ...t[indexModel].markers[indexMarker],
-    })),
-  }));
+  const modelsWithText = useMemo(
+    () =>
+      models.map((model, indexModel) => ({
+        ...model,
+        ...t[indexModel],
+        markers: model.markers.map((marker, indexMarker) => ({
+          ...marker,
+          ...t[indexModel].markers[indexMarker],
+        })),
+      })),
+    [t]
+  );
 
   const [selectedModel, setSelectedModel] = useState(modelsWithText[0]);
+
+  useEffect(() => {
+    setSelectedModel(modelsWithText[0]);
+  }, [modelsWithText]);
 
   // Markers
   const [selectedMarker, setSelectedMarker] = useState(null);
